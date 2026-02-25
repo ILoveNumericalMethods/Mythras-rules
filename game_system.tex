@@ -811,3 +811,789 @@ Wind, especially very strong winds, can have an adverse effect on activity. A wi
 \end{table}
 
 \end{document}
+
+\section{Currency and Economy}
+\label{sec:currency}
+
+The standard unit of currency in Mythras is the Silver Piece (SP). The exchange rate is:
+\begin{itemize}
+    \item 1 Copper Piece (CP) = 1/10 SP
+    \item 1 Gold Piece (GP) = 10 SP
+\end{itemize}
+
+\subsection{Standard of Living}
+\label{sec:living-standards}
+
+Social class determines baseline income and living standards. \tableref{tab:social-class} shows the minimum income required to maintain a given social class.
+
+\begin{longtable}[c]{|l|c|c|c|l|}
+\hline
+\multicolumn{5}{|c|}{\textbf{Table 1: Social Class}} \\
+\hline
+\textbf{Social Class} & \textbf{SP per Day} & \textbf{SP per Week} & \textbf{SP per Year*} & \textbf{Typical Home} \\
+\hline
+Exile & \multicolumn{3}{c|}{Lives a hand to mouth existence} & None/Lives Rough \\
+\hline
+Slave & 1 & 7 & 375 & Shared Shack/Hut \\
+\hline
+Freeman & 2 & 15 & 750 & Hut/Cabin/Rented Room \\
+\hline
+Gentry & 10 & 75 & 3,750 & House/Apartment \\
+\hline
+Aristocracy & 50 & 350 & 20,000 & Large Villa/Mansion \\
+\hline
+Ruling & 250 & 1,750 & 100,000 & Palaces/Estates \\
+\hline
+\multicolumn{5}{l}{*Depends on campaign setting. Assumes 360-day year, totals rounded up.} \\
+\hline
+\end{longtable}
+Characters must spend their class-based income on general living expenses (food, drink, lodging, clothing, etc.). Spending less risks dropping a social class and reputational damage.
+
+
+
+\section{Bartering and Haggling}
+\label{sec:trade}
+
+\subsection{Bartering}
+\label{sec:bartering}
+
+Bartering depends on offering something the other party needs or finds valuable in their normal environment.
+
+\textbf{Process:}
+\begin{enumerate}
+    \item Character makes an offer of something.
+    \item If offering a common commodity or essential service obviously beneficial to the other party, the barter succeeds automatically.
+    \item If offering something of less obvious value/utility, make a Customs or relevant Culture roll.
+    \item Make an Opposed Influence or Commerce roll. The other party resists with Willpower or Commerce (whichever is higher).
+\end{enumerate}
+
+\begin{longtable}[c]{|c|c|c|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Table 3: Barter Modifier}} \\
+\hline
+\textbf{Customs/Culture} & \textbf{Influence Bonus} & \textbf{Commerce Bonus} \\
+\hline
+Critical & Easy & Very Easy \\
+\hline
+Success & Standard & Easy \\
+\hline
+Failure & Hard & Standard \\
+\hline
+Fumble & Formidable & Hard \\
+\hline
+\end{longtable}
+
+If the character wins the Opposed roll, the offer is accepted. If they fumble, they have likely insulted the other party.
+
+\subsection{Haggling}
+\label{sec:haggling}
+
+Haggling reduces a price to a reasonable amount. Use Insight rather than Customs to gain advantage, followed by a Differential Roll.
+
+\textbf{Process:}
+\begin{enumerate}
+    \item Use Insight to gain advantage in negotiation.
+    \item Differential Roll: Influence or Commerce vs. Willpower or Commerce.
+    \item Outcome determined by difference in success levels.
+\end{enumerate}
+
+\begin{longtable}[c]{|c|c|c|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Table 4: Haggling Outcome}} \\
+\hline
+\textbf{Difference in} & \textbf{Purchaser gains} & \textbf{Seller gains} \\
+\textbf{Levels of Success} & \textbf{Advantage} & \textbf{Advantage} \\
+\hline
+3 & 25\% of Standard Price & 200\% of Standard Price \\
+\hline
+2 & 50\% of Standard Price & 150\% of Standard Price \\
+\hline
+1 & 75\% of Standard Price & 125\% of Standard Price \\
+\hline
+Equal & \multicolumn{2}{c|}{Standard Price} \\
+\hline
+\end{longtable}
+
+
+\section{Armour}
+\label{sec:armour}
+
+Each armour type defined by:
+\begin{itemize}
+    \item \textbf{AP:} Armour points per location covered
+    \item \textbf{ENC:} Typical weight and bulk 
+    \item \textbf{Cost:} In Silver Pieces, per location
+    \item \textbf{Milieu:} Typical era (P - Stone Age level, A - Bronze and Iron Ages, M - European Middle Ages, R - European Renaissance, E - 17th-18th Centuries, I - Industrial Revolution)
+\end{itemize}
+
+\begin{longtable}[c]{|l|l|c|c|c|c|c|}
+\hline
+\multicolumn{7}{|c|}{\textbf{Table 5: Armour}} \\
+\hline
+\textbf{Base} & \textbf{Construction} & \textbf{AP} & \textbf{ENC} & \textbf{Cost per} & \textbf{Suit ENC/Cost/} & \textbf{Milieu} \\
+\textbf{Material} & & & & \textbf{Location} & \textbf{Armour Penalty} & \\
+\hline
+\multirow{4}{*}{Flexible} & Natural/Cured & 1 & 2 & 20 & 14/140/3 & Any \\
+\cline{2-7}
+ & Padded/Quilted & 1 & 1 & 80 & 7/560/2 & Any \\
+\cline{2-7}
+ & Laminated & 3 & 2 & 180 & 14/1260/3 & A-M \\
+\cline{2-7}
+ & Scaled & 4 & 3 & 320 & 21/2240/5 & A-R \\
+\hline
+\multirow{4}{*}{Rigid} & Half Plate & 5 & 4 & 500 & 28/3500/6 & A-R \\
+\cline{2-7}
+ & Mail & 6 & 5 & 900 & 30/6300/7 & A-R \\
+\cline{2-7}
+ & Plated Mail & 7 & 6 & 1400 & 42/9800/9 & M-E \\
+\cline{2-7}
+ & Articulated Plate & 8 & 7 & 2400 & 49/16800/10 & M-E \\
+\hline
+\end{longtable}
+
+
+\subsection{Armour and SIZ}
+\label{sec:armour-siz}
+
+Flexible armour fits one point of SIZ more or less than designed. Rigid armour only fits the specific SIZ and frame it was designed for.
+
+\subsection{Armour Penalty to Initiative}
+\label{sec:armour-penalty}
+
+Initiative Penalty = (Total ENC of all armour worn) ÷ 5, rounded up.
+
+\textbf{Example:} Full suit of plated mail (ENC 6 per location × 7 locations = 42 total) → 42 ÷ 5 = 8.2, rounded up to 9 Initiative Penalty.
+
+\section{Livestock}
+\label{sec:livestock}
+
+\begin{longtable}[c]{|l|c|c|c|}
+\hline
+\multicolumn{4}{|c|}{\textbf{Table 7: Livestock}} \\
+\hline
+\textbf{Item} & \textbf{Poor Quality} & \textbf{Reasonable} & \textbf{Superior} \\
+\hline
+Bull & 500 & 1000 & 3000 \\
+\hline
+Calf & 30 & 60 & 180 \\
+\hline
+Camel & 1100 & 2200 & 6000 \\
+\hline
+Cow & 100 & 200 & 600 \\
+\hline
+Fowl & 1 & 2 & 4 \\
+\hline
+Goat & 2 & 5 & 50 \\
+\hline
+Horse (cavalry/war-trained) & 3000 & 6000 & 10,000 \\
+\hline
+Horse (heavy draught) & 1400 & 2800 & 8000 \\
+\hline
+Horse (riding) & 1200 & 2500 & 7000 \\
+\hline
+Ox & 150 & 300 & 800 \\
+\hline
+Pig & 2 & 5 & 50 \\
+\hline
+Sheep & 2 & 5 & 50 \\
+\hline
+\end{longtable}
+
+\section{Tools}
+\label{sec:tools}
+Tools include all the items any self-respecting adventurer can be
+expected to own: rope, sacks and bags, candles, lanterns, and so on.
+All items in this list are deemed to be of reasonable quality.
+
+
+\begin{longtable}[c]{|l|c|c|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Table 8: Tools}} \\
+\hline
+\textbf{Item} & \textbf{ENC} & \textbf{Cost} \\
+\hline
+Abacus & 1 & 8 SP \\
+\hline
+Astrolabe (Ancient onwards) & 1 & 200 SP \\
+\hline
+Backpack/Satchel (holds up to 20 ENC) & 1 & 5 SP \\
+\hline
+Bedroll & 1 & 1 SP \\
+\hline
+Bit \& Bridle & 1 & 15 SP \\
+\hline
+Block \& tackle & 1 & 15 SP \\
+\hline
+Bottle, glass/earthenware & — & 2 SP \\
+\hline
+Candle, 6 hour & 1 & 1 SP \\
+\hline
+Chain, 2m & 2 & 40 SP \\
+\hline
+Chest, Large (holds up to 100 ENC) & 5 & 80 SP \\
+\hline
+Chest, Small (holds up to 50 ENC) & 3 & 40 SP \\
+\hline
+Cooking Pot (for travel) & 2 & 3 SP \\
+\hline
+Craft tools (basic tools to match a handicraft) & 2 & 75 SP \\
+\hline
+Crop (riding) & — & 15 SP \\
+\hline
+Crowbar & 1 & 25 SP \\
+\hline
+Doorjamb & 2 & 5 SP \\
+\hline
+Driver's whip & — & 25 SP \\
+\hline
+Falconer's Kit & 1 & 30 SP \\
+\hline
+Feed/mount rations (per day) & 1 & 5 CP \\
+\hline
+Fine wine goblet (glass) & — & 8 SP \\
+\hline
+First aid kit (10 applications) & — & 25 SP \\
+\hline
+Fish hooks (20) & — & 1 SP \\
+\hline
+Fishing kit & 1 & 15 SP \\
+\hline
+Fishing Net & 4 & 10 SP \\
+\hline
+Flint \& tinder & — & 1 SP \\
+\hline
+Game Snares and Traps & 1 & 1 SP \\
+\hline
+Goad & 1 & 25 SP \\
+\hline
+Grappling hook & — & 5 SP \\
+\hline
+Hammer/Saw/Mallet/Chisel & 1 & 1 SP \\
+\hline
+Healer's kit (10 applications) & 1 & 150 SP \\
+\hline
+Hourglass (Ancient onwards) & 1 & 20 SP \\
+\hline
+Knife (tool, not weapon) & — & 5 SP \\
+\hline
+Ladder, rope 3m & 4 & 2 SP \\
+\hline
+Lantern, basic & 1 & 10 SP \\
+\hline
+Lock picks & — & 75 SP \\
+\hline
+Lockbox & 1-4 & 75-250 SP \\
+\hline
+Lodestone & — & 5 SP \\
+\hline
+Milling Stone & 2 & 8 SP \\
+\hline
+Mirror (hand glass) & 1 & 12 SP \\
+\hline
+Mug/Beaker/Dish/Plate (wood) & — & 5 CP each \\
+\hline
+Musical instrument & 2 & 70 SP \\
+\hline
+Nails or tacks (50) & — & 2 CP \\
+\hline
+Oil flask & 1 & 1 SP \\
+\hline
+Papyrus or paper sheet & — & 5 CP \\
+\hline
+Parchment (per sheet) & — & 1 SP \\
+\hline
+Pickaxe & 2 & 15 SP \\
+\hline
+Pitchfork & 2 & 5 SP \\
+\hline
+Pulley & 2 & 10 SP \\
+\hline
+Quill pen & — & 1 CP \\
+\hline
+Rope, 10m & 2 & 5 SP \\
+\hline
+Sack, large (holds 40 ENC) & 1 & 2 SP \\
+\hline
+Sack, small (holds 20 ENC) & — & 5 CP \\
+\hline
+Saddle and tack (riding) & 2 & 50 SP \\
+\hline
+Saddle and tack (war) & 3 & 150 SP \\
+\hline
+Saddle and tack (draught) & 4 & 40 SP \\
+\hline
+Scabbard/Baldric/Quiver & 1 & 5 SP \\
+\hline
+Scythe & 3 & 10 SP \\
+\hline
+Sheath (dagger) & — & 1 SP \\
+\hline
+Shovel & 2 & 5 SP \\
+\hline
+Sledgehammer & 3 & 15 SP \\
+\hline
+Soap (bar) & — & 5 CP \\
+\hline
+Spade & 2 & 5 SP \\
+\hline
+Tent, large (4 person) & 8 & 50 SP \\
+\hline
+Tent, small (1 person) & 3 & 15 SP \\
+\hline
+Torch & 1 & 1 CP \\
+\hline
+Waterskin & 1 & 5 CP \\
+\hline
+Whetstone & — & 1 SP \\
+\hline
+Writing ink (vial) & — & 5 SP \\
+\hline
+\end{longtable}
+
+\section{Melee Weapons}
+\label{sec:melee-weapons}
+
+Melee weapons are governed by a series of characteristics:
+
+\begin{itemize}
+    \item \textbf{Damage:} Amount of damage delivered on successful attack
+    \item \textbf{Size:} Ability to inflict and \textcolor{red}{parry} damage (S, M, L, H, E)
+    \item \textbf{\textcolor{red}{Reach}:} Length and ability to hold a foe at bay (T, S, M, L, VL)
+    \item \textbf{Combat Effects:} Access to \textcolor{red}{special effects} 
+    \item \textbf{ENC:} Combined encumbrance and weight
+    \item \textbf{AP/HP:} Armour Points and Hit Points
+    \item \textbf{Traits:} Special characteristics (see weapon-traits below)
+    \item \textbf{Cost:} In Silver Pieces
+    \item \textbf{Milieu:} Typical era (P - Stone Age level, A - Bronze and Iron Ages, M - European Middle Ages, R - European Renaissance, E - 17th-18th Centuries, I - Industrial Revolution)
+\end{itemize}
+
+\subsection{Weapon Traits}
+\label{sec:weapon-traits}
+
+\begin{itemize}
+    \item \textbf{Barbed:} If \textcolor{red}{impaled}, will cause full damage when yanked free rather than half
+    \item \textbf{Defensive:} If used to \textcolor{red}{parry} an attacking weapon, that weapon is considered one size smaller
+    \item \textbf{Double-Ended:} Length remaining in hand can be reversed and used as a shorter version
+    \item \textbf{Entrapping:} Allows use of the \textcolor{red}{Pin} Weapon special effect without needing to roll a Critical
+    \item \textbf{Flexible:} Shield is considered one size smaller when parrying
+    \item \textbf{Mounted:} Must be used from the back of a moving mount
+    \item \textbf{Offensive:} Cannot be used to \textcolor{red}{parry}
+    \item \textbf{Passive Block:} Can \textcolor{red}{passively block} multiple Hit Locations, must be continuous to another
+    \item \textbf{Ranged:} Can parry ranged weapons
+    \item \textbf{Set:} Can be used to receive a foot or mounted charge
+    \item \textbf{Stealth:} Must be used from ambush
+    \item \textbf{Thrown:} Can be used as a ranged weapon as well as hand-to-hand
+\end{itemize}
+
+\begin{longtable}[c]{|l|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{9}{|c|}{\textbf{Table 9: One-Handed Melee Weapons}} \\
+\hline
+\textbf{Weapon} & \textbf{Damage} & \textbf{Size} & \textbf{Reach} & \textbf{Combat Effects} & \textbf{ENC} & \textbf{AP/HP} & \textbf{Traits} & \textbf{Milieu} & \textbf{Cost} \\
+\hline
+Axe, battle & 1d8+1 & M & M & Bleed, Sunder & 2 & 6/10 & — & All & 75 SP \\
+\hline
+Axe, great & 2d6+2 & L & L & Bleed, Sunder & 3 & 6/12 & — & A-M & 175 SP \\
+\hline
+Axe, hand & 1d6 & M & S & Bleed & 1 & 4/8 & Thrown & All & 15 SP \\
+\hline
+Club & 1d6 & M & S & Stun Location & 1 & 4/8 & — & All & 5 SP \\
+\hline
+Dagger & 1d4+1 & S & S & Impale & — & 6/8 & — & All & 30 SP \\
+\hline
+Falchion & 1d8 & M & M & Bleed, Sunder & 2 & 6/10 & — & M & 100 SP \\
+\hline
+Flail & 1d8 & M & L & Stun Location, Sunder & 2 & 4/8 & Flexible & M & 50 SP \\
+\hline
+Gladius & 1d8 & M & S & Impale & 1 & 6/10 & — & A & 100 SP \\
+\hline
+Hatchet & 1d6 & M & S & Bleed & 1 & 4/8 & Thrown & All & 25 SP \\
+\hline
+Javelin & 1d8 & M & L & Impale & 2 & 4/8 & Thrown & A-M & 20 SP \\
+\hline
+Knife & 1d4 & S & S & Impale & — & 4/6 & — & All & 10 SP \\
+\hline
+Kopis & 1d8 & M & M & Bleed, Sunder & 2 & 6/10 & — & A & 125 SP \\
+\hline
+Mace & 1d8 & M & S & Stun Location & 2 & 6/10 & — & All & 50 SP \\
+\hline
+Maul & 1d10 & L & L & Stun Location & 3 & 4/12 & — & A-M & 80 SP \\
+\hline
+Pick & 1d6+1 & M & M & Impale & 2 & 5/10 & — & A-M & 40 SP \\
+\hline
+Rapier & 1d8 & M & L & Impale & 1 & 5/10 & — & R-E & 150 SP \\
+\hline
+Sabre & 1d8 & M & M & Bleed & 2 & 6/10 & — & M-E & 125 SP \\
+\hline
+Scimitar & 1d8 & M & M & Bleed & 2 & 6/10 & — & M & 100 SP \\
+\hline
+Shortsword & 1d6+1 & M & S & Impale & 1 & 6/10 & — & All & 60 SP \\
+\hline
+Sickle & 1d6 & M & S & Bleed, Impale & 1 & 4/8 & — & A-M & 15 SP \\
+\hline
+Spear & 1d8+1 & L & L & Impale & 2 & 4/10 & Set & All & 20 SP \\
+\hline
+Staff, quarter & 1d8 & M & L & Stun Location & 2 & 4/10 & Double-Ended & All & 5 SP \\
+\hline
+Trident & 1d8+1 & L & L & Impale & 2 & 5/10 & Barbed & A-M & 80 SP \\
+\hline
+Warhammer & 1d8+1 & M & M & Stun Location & 2 & 6/12 & — & A-M & 100 SP \\
+\hline
+\end{longtable}
+
+\begin{longtable}[c]{|l|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{9}{|c|}{\textbf{Table 10: Two-Handed Melee Weapons}} \\
+\hline
+\textbf{Weapon} & \textbf{Damage} & \textbf{Size} & \textbf{Reach} & \textbf{Combat Effects} & \textbf{ENC} & \textbf{AP/HP} & \textbf{Traits} & \textbf{Milieu} & \textbf{Cost} \\
+\hline
+Bardiche & 2d8 & H & VL & Bleed, Sunder & 4 & 6/14 & — & M & 150 SP \\
+\hline
+Bill & 2d6+2 & H & VL & Impale, Sunder & 4 & 5/14 & Set & M & 80 SP \\
+\hline
+Falx & 2d6 & L & L & Bleed & 3 & 6/12 & — & A-M & 125 SP \\
+\hline
+Glaive & 2d6+1 & H & VL & Bleed, Sunder & 4 & 5/14 & Set & M & 100 SP \\
+\hline
+Greatsword & 2d8 & H & L & Bleed, Sunder & 4 & 6/16 & — & M-E & 350 SP \\
+\hline
+Halberd & 2d6+2 & H & VL & Bleed, Impale, Sunder & 4 & 5/16 & Set & M & 120 SP \\
+\hline
+Longaxe & 2d6+2 & H & VL & Bleed, Sunder & 4 & 6/14 & — & M & 200 SP \\
+\hline
+Longspear & 1d10+1 & H & VL & Impale & 3 & 4/12 & Set & A-M & 40 SP \\
+\hline
+Longsword & 1d10 & L & L & Bleed, Sunder & 3 & 6/14 & — & M-E & 250 SP \\
+\hline
+Military pick & 1d10 & L & L & Impale & 3 & 5/12 & — & A-M & 70 SP \\
+\hline
+Pike & 1d12+1 & E & VL & Impale & 5 & 4/16 & Set, Mounted & M-E & 60 SP \\
+\hline
+Scythe & 1d10+1 & H & VL & Bleed, Impale & 4 & 4/12 & — & A-M & 30 SP \\
+\hline
+Voulge & 2d6+1 & H & L & Bleed, Sunder & 4 & 5/14 & — & M & 90 SP \\
+\hline
+Zweihänder & 2d8+1 & E & VL & Bleed, Sunder & 5 & 6/18 & — & R-E & 450 SP \\
+\hline
+\end{longtable}
+
+\section{Shields}
+\label{sec:shields}
+
+Shields are defensive weapons that can also be used offensively. Each shield is defined by:
+\begin{itemize}
+    \item \textbf{AP/HP:} Armour Points and Hit Points
+    \item \textbf{Size:} Ability to deflect attacks (S, M, L, H)
+    \item \textbf{ENC:} Encumbrance value
+    \item \textbf{Combat Effects:} \textcolor{red}{Special effects} available
+    \item \textbf{Traits:} Special characteristics
+    \item \textbf{Cost:} In Silver Pieces
+    \item \textbf{Milieu:} Typical era (P - Stone Age level, A - Bronze and Iron Ages, M - European Middle Ages, R - European Renaissance, E - 17th-18th Centuries, I - Industrial Revolution)
+\end{itemize}
+
+\begin{longtable}[c]{|l|c|c|c|c|c|c|}
+\hline
+\multicolumn{7}{|c|}{\textbf{Table 11: Shields}} \\
+\hline
+\textbf{Shield Type} & \textbf{AP/HP} & \textbf{Size} & \textbf{ENC} & \textbf{Combat Effects} & \textbf{Traits} & \textbf{Milieu} & \textbf{Cost} \\
+\hline
+Buckler & 6/8 & S & 1 & Stun Location & Defensive, Ranged & All & 25 SP \\
+\hline
+Heater & 8/12 & M & 2 & Stun Location & Defensive & M-E & 50 SP \\
+\hline
+Hoplon/Aspis & 8/16 & L & 3 & Stun Location & Defensive & A & 75 SP \\
+\hline
+Kite & 8/14 & L & 3 & Stun Location & Defensive & M & 70 SP \\
+\hline
+Round & 8/12 & M & 2 & Stun Location & Defensive & P-M & 40 SP \\
+\hline
+Scutum & 8/18 & H & 4 & Stun Location & Defensive, Passive Block & A & 100 SP \\
+\hline
+Target & 8/14 & M & 2 & Stun Location & Defensive & M-E & 60 SP \\
+\hline
+Wall shield & 8/20 & H & 5 & Stun Location & Defensive, Passive Block & A-M & 150 SP \\
+\hline
+\end{longtable}
+
+\section{Ranged Weapons}
+\label{sec:ranged-weapons}
+
+
+Ranged weapons have very similar characteristics to Melee Weapons, although there are some differences as noted below:
+
+\begin{itemize}
+    \item \textbf{Damage:} Damage dealt on successful attack.
+    \item \textbf{Damage Modifier:} Yes/No - whether user's damage modifier applies.
+    \item \textbf{Force:} Impact rating (S/M/L/H/E) determining ability to overcome shields.
+    \item \textbf{Range:} Three range bands in metres: Close/Effective/Long.
+    \begin{itemize}
+        \item \textbf{Close Range:} Choose Location special effect allowed against stationary or unaware targets without requiring a Critical.
+        \item \textbf{Effective Range:} No significant modifiers on accuracy or power.
+        \item \textbf{Long Range:} Damage halved, Force reduced by one step.
+    \end{itemize}
+    \item \textbf{Load:} Number of turns required to load or reload ammunition.
+    \item \textbf{Combat Effects:} Same \textcolor{red}{special effects} as close combat weapons.
+    \item \textbf{Impaling Size:} Effective size (S/M/L/H/E) of weapon or ammunition for impaling attacks.
+    \item \textbf{ENC:} Combined encumbrance and weight.
+    \item \textbf{AP/HP:} Armour Points and Hit Points - damage resistance and durability.
+    \item \textbf{Cost:} Price in Silver Pieces.
+    \item \textbf{Milieu:} Typical era (P - Stone Age level, A - Bronze and Iron Ages, M - European Middle Ages, R - European Renaissance, E - 17th-18th Centuries, I - Industrial Revolution)
+\end{itemize}
+
+Thrown javelins may use the Pin Weapon special effect against shields, without needing to roll a Critical.
+
+\begin{longtable}[c]{|l|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{11}{|c|}{\textbf{Table 12: Ranged Weapons}} \\
+\hline
+\textbf{Ranged Weapon} & \textbf{Damage} & \textbf{Dam. Mod} & \textbf{Force} & \textbf{Range} & \textbf{Load} & \textbf{Combat Effects} & \textbf{Impale Size} & \textbf{ENC} & \textbf{AP/HP} & \textbf{Milieu} & \textbf{Cost} \\
+\hline
+Atlatl & — & +1 Step & — & 10/25/75 & 1 & — & — & 1/4 & P & 10 SP \\
+\hline
+Blowgun & 1d4 & N & — & 10/20/30 & 2 & — & — & 1/4 & P & 30 SP \\
+\hline
+Bolas & 1d4 & N & — & 10/25/50 & — & Entangle & — & 2/2 & P-A & 10 SP \\
+\hline
+Dagger & 1d4 & Y & S & 5/10/20 & — & Impale & S & 6/8 & All & 30 SP \\
+\hline
+Dart & 1d4 & Y & S & 5/10/20 & — & Impale & S & 2/1 & P-A & 10 SP \\
+\hline
+Discus & 1d4+1 & Y & L & 5/20/40 & — & Stun Location & — & 2/3 & A & 30 SP \\
+\hline
+Hatchet & 1d6 & Y & S & 10/20/30 & — & Bleed & — & 14/6 & All & 25 SP \\
+\hline
+Heavy crossbow & 1d10 & N & H & 20/150/300 & 4 & Impale, Sunder & S & 24/8 & M-E & 350 SP \\
+\hline
+Javelin & 1d8+1 & Y & H & 10/20/50 & — & Impale, Pin Weapon (Shield) & M & 13/8 & A-M & 20 SP \\
+\hline
+Light crossbow & 1d8 & N & L & 20/100/200 & 3 & Impale & S & 14/5 & M-E & 150 SP \\
+\hline
+Long bow & 1d8 & Y & H & 15/125/250 & 2 & Impale & S & 14/7 & M & 200 SP \\
+\hline
+Net & — & N & — & 3/5/10 & — & Entangle & — & 32/20 & All & 20 SP \\
+\hline
+Recurve bow & 1d8 & Y & H & 15/125/250 & 2 & Impale & S & 14/8 & A-M & 225 SP \\
+\hline
+Short bow & 1d6 & Y & L & 15/100/200 & 2 & Impale & S & 14/4 & P-M & 75 SP \\
+\hline
+Shortspar & 1d8 & Y & L & 10/15/30 & — & Impale & M & 14/5 & All & 20 SP \\
+\hline
+Sling & 1d8 & N & L & 10/150/300 & 3 & Stun Location & — & 1/2 & P-M & 5 SP \\
+\hline
+Staff sling & 2d6 & N & E & 5/25/50 & 4 & Stun Location & — & 23/6 & A-M & 20 SP \\
+\hline
+Stone/Rock & 1d3 & Y & S & 5/10/20 & — & Stun Location & — & — & All & — \\
+\hline
+Thrown dart & 1d6 & Y & M & 10/20/30 & — & Impale & S & 1/2 & P-A & 5 SP \\
+\hline
+Trident & 1d8 & Y & L & 10/15/30 & — & Barbed, Impale & M & 24/10 & A-M & 155 SP \\
+\hline
+\end{longtable}
+
+\subsection{Ranged Weapon Ammunition}
+\label{sec:ammunition}
+
+\begin{longtable}[c]{|l|c|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Table 13: Ammunition Costs}} \\
+\hline
+\textbf{Item} & \textbf{Cost} \\
+\hline
+Arrows (per sheaf of a dozen) & 4 SP \\
+\hline
+Quarrels (per sheaf of a dozen) & 3 SP \\
+\hline
+Lead sling bullets (per bag of twenty) & 1 SP \\
+\hline
+Blowgun darts (per half dozen) & 2 SP \\
+\hline
+Thrown darts (per sheaf of a dozen) & 2 SP \\
+\hline
+\end{longtable}
+
+\section{Equipment Manufacturing and Quality}
+\label{sec:manufacturing}
+
+\subsection{Resources}
+\label{sec:resources}
+
+Access to suitable tools, materials, and workplace determines:
+\begin{itemize}
+    \item Whether the task is possible
+    \item How long it takes to complete
+    \item Quality of the output
+\end{itemize}
+
+\begin{longtable}[c]{|l|l|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Table 14: Resource Modifiers}} \\
+\hline
+\textbf{Circumstances} & \textbf{Skill Grade} \\
+\hline
+No tools & Hopeless \\
+\hline
+Improvised tools & Herculean \\
+\hline
+Poor Quality/Incomplete tools, or lacking crucial resources & Formidable \\
+\hline
+\end{longtable}
+
+\subsection{Task Rounds}
+\label{sec:task-rounds}
+
+Building or repairing something is measured by Task Rounds. This is a variable amount of time dependent on what is being done.
+
+\begin{longtable}[c]{|l|l|l|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Table 15: Sample Task Rounds}} \\
+\hline
+\textbf{Task} & \textbf{Appropriate Skill} & \textbf{Task Round Unit} \\
+\hline
+Repairing clothing & Craft (Needlework) & 5 minutes – 1 hour \\
+\hline
+Forging metal & Craft (Blacksmith) & 5 minutes – 30 minutes \\
+\hline
+Forging a sword & Craft (Weaponsmith) & 1 day – 5 days \\
+\hline
+Erecting a wooden or stone structure & Engineering & 6 months – several years \\
+\hline
+Sharpening a blade & Mechanisms or Craft (Weaponsmith) & 3 to 5 minutes \\
+\hline
+\end{longtable}
+
+Completing the task requires a roll against the relevant skill. Note the level of success:
+
+\begin{itemize}
+    \item Critical: +50\%
+    \item Success: +25\%
+    \item Failure: +0\%
+    \item Fumble: -25\%
+\end{itemize}
+
+Continue making skill rolls, each taking one Task Round, until 100\% has been achieved - or until time, resources, and budget are exhausted. Reaching 100\% means the final result is of an acceptable standard. Anything less is below par, and may be flawed in some way.
+
+With unlimited time it is possible to exceed 100\%. The percentage achieved at the end of the time available indicates the overall quality of the product or task. Exceptional quality offers enhancements to the product.
+
+\subsection{Enhancements}
+\label{sec:enhancements}
+
+If a project reaches 100\% in four or fewer Task Rounds, the maker has the option to continue refining it. To do this he continues to work on it for a further Task Round and, depending on the result of the skill roll for the Task Round, may enhance it:
+
+\begin{itemize}
+    \item Critical Success: +2 Enhancements
+    \item Success: +1 Enhancement
+    \item Failure: No Enhancements
+    \item Fumble: Reduce Quality by 25\%
+\end{itemize}
+
+
+\begin{longtable}[c]{|c|l|c|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Table 16: Item Quality}} \\
+\hline
+\textbf{Total Score} & \textbf{Result} & \textbf{Enhancements} \\
+\hline
+150+ & Excellent & 2 \\
+\hline
+125-149 & Good & 1 \\
+\hline
+100-124 & Acceptable & 0 \\
+\hline
+75-99 & Flawed & \multicolumn{1}{p{8cm}|}{The product will break or wear out 25\% faster than normal; or its Hit Points and value are reduced by one quarter reflecting its flawed durability.} \\
+\hline
+50-74 & Poor & \multicolumn{1}{p{8cm}|}{The product will break or wear out 50\% faster than normal; or its Hit Points and value are reduced by half reflecting its flawed durability.} \\
+\hline
+25-49 & Shoddy & \multicolumn{1}{p{8cm}|}{The product will break or wear out 75\% faster than normal; or its Hit Points and value are reduced by three quarters reflecting its shoddy durability.} \\
+\hline
+0-24 & Unusable & \multicolumn{1}{p{8cm}|}{The product is simply of no use whatsoever.} \\
+\hline
+\end{longtable}
+
+
+\begin{longtable}[c]{|l|p{10cm}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Table 17: Enhancements}} \\
+\hline
+\textbf{Enhancement} & \textbf{Effect} \\
+\hline
+Desirable & The item's value is doubled. \\
+\hline
+Durable & The item's Hit Points are increased by one. \\
+\hline
+Resilient & The item's Armour Points are increased by one. \\
+\hline
+Efficient & The item is of such quality that it confers a 5\% bonus to the skill required to use it. \\
+\hline
+Effective & If a weapon, it gains +1 to its Damage rating. Other items reduce ENC value by 1d2 points. \\
+\hline
+\end{longtable}
+
+\section{Siege Weapons}
+\label{sec:siege-weapons}
+
+The following weapons do not use handedness, damage bonuses or ENC being beyond such issues. The Size of their projectiles is rated as Beyond Enormous (BE), meaning that no shield will protect against the force of such impacts. Due to the nature of the weapons, Range only has two values; Effective Range and Long Range.
+
+
+\begin{itemize}
+    \item \textbf{Reloading time} is measured in Combat Rounds, not Turns.
+    \item \textbf{Crew:} This is the minimum and maximum crew required to operate the weapon. Each extra person above the minimum value reduces the Load time by 1.
+    \item \textbf{Siege Weapon Combat Effects} are included for attacks against large or colossal creatures. They are superfluous against fortifications.
+\end{itemize}
+
+\begin{longtable}[c]{|l|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{8}{|c|}{\textbf{Table 14: Siege Weapons}} \\
+\hline
+\textbf{Weapon} & \textbf{Damage} & \textbf{Force} & \textbf{Range (m)} & \textbf{Load} & \textbf{Crew} & \textbf{Combat Effects} & \textbf{Cost} \\
+\hline
+Ballista & 3d10 & BE & 250/500 & 3 rounds & 2-4 & Impale & 1000 SP \\
+\hline
+Catapult, light & 4d10 & BE & 150/300 & 5 rounds & 3-6 & Sunder & 2000 SP \\
+\hline
+Catapult, heavy & 6d10 & BE & 200/400 & 8 rounds & 4-8 & Sunder & 4000 SP \\
+\hline
+Trebuchet & 8d10 & BE & 300/600 & 12 rounds & 6-12 & Sunder & 8000 SP \\
+\hline
+Ram, battering & 2d10 & BE & — & — & 4-10 & Sunder & 500 SP \\
+\hline
+Siege tower & — & — & — & — & 10-30 & — & 5000 SP \\
+\hline
+\end{longtable}
+
+\section{Vehicles}
+\label{sec:vehicles}
+
+Most vehicles are drawn by one or more animals, and move at the animal's rate. The number of animals required, for the animals to maintain their standard movement rate, is noted in the Draw column of the vehicles table. Reduce the movement proportionately if fewer animals are used. Generally drivers will not exceed the required number of animals because this decreases control, stability, and integrity.
+
+The amount a vehicle can carry in terms of driver(s), passengers, and cargo (total ENC) is indicated in the Load column. Again, drivers will refuse to exceed these load amounts because control and stability becomes more difficult.
+
+\begin{longtable}[c]{|l|c|c|c|c|c|}
+\hline
+\multicolumn{6}{|c|}{\textbf{Table 15: Vehicles}} \\
+\hline
+\textbf{Vehicle} & \textbf{Draw} & \textbf{Load (ENC)} & \textbf{Movement} & \textbf{AP/HP} & \textbf{Milieu} & \textbf{Cost} \\
+\hline
+Chariot, light & 2 horses & 100 & As horses & 4/20 & A-M & 300 SP \\
+\hline
+Chariot, heavy & 4 horses & 200 & As horses & 6/30 & A-M & 600 SP \\
+\hline
+Cart & 1-2 oxen/horses & 300 & Half draught animal & 4/25 & All & 100 SP \\
+\hline
+Wagon & 2-4 oxen/horses & 800 & Half draught animal & 6/40 & All & 300 SP \\
+\hline
+Wagon, covered & 2-4 oxen/horses & 600 & Half draught animal & 6/35 & All & 400 SP \\
+\hline
+Sled & 2-4 oxen/horses & 400 & As draught animal & 3/20 & P-M & 50 SP \\
+\hline
+Canoe & 1-2 paddlers & 100 & Paddler's swim rate & 2/15 & All & 30 SP \\
+\hline
+Rowboat & 2-4 rowers & 400 & Rower's swim rate & 3/25 & All & 100 SP \\
+\hline
+Sailing ship, small & Wind & 10,000 & 5-10 km/h & 8/200 & A-M & 5000 SP \\
+\hline
+Sailing ship, large & Wind & 50,000 & 5-10 km/h & 10/400 & A-M & 20,000 SP \\
+\hline
+Galley & 20-100 rowers & 30,000 & 3-7 km/h & 8/300 & A-M & 15,000 SP \\
+\hline
+\end{longtable}
+\end{document}
