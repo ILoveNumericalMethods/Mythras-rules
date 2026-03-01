@@ -1596,4 +1596,816 @@ Sailing ship, large & Wind & 50,000 & 5-10 km/h & 10/400 & A-M & 20,000 SP \\
 Galley & 20-100 rowers & 30,000 & 3-7 km/h & 8/300 & A-M & 15,000 SP \\
 \hline
 \end{longtable}
+
+\section{Skills Overview}
+
+Skills are divided into two categories:
+
+\begin{itemize}
+    \item \textbf{Standard Skills}: Common to everyone, representing innate abilities employed regularly from any walk of life.
+    \item \textbf{Professional Skills}: Specialized training that differs between characters, reflecting expertise developed within a career and culture.
+\end{itemize}
+
+Despite these distinctions, Standard and Professional Skills work identically in play.
+
+\section{How Skills Work}
+
+A skill has a base value calculated from characteristics (either two characteristics added together, or one characteristic multiplied by two). There is no upper limit to a skill's value; it can exceed 100\%.
+
+\subsection{Skill Resolution}
+
+Whenever a character attempts a test or challenge, roll 1d100 and compare to the skill value:
+
+\begin{itemize}
+    \item \textbf{Success}: Roll equal to or less than the skill value
+    \item \textbf{Failure}: Roll greater than the skill value
+    \item Any roll of 01-05 is always a success
+    \item Any roll of 96-00 is always a failure, regardless of skill value
+    \item A Critical success occurs on a roll equal to or less than one-tenth of the skill's value (round fractions up).
+    \item Skills 100\% or less: Fumble on 99 or 00
+    \item Skills above 100\%: Fumble only on 00
+\end{itemize}
+
+\subsection{Difficulty Grades (Scaling Method)}
+
+\begin{longtable}{|l|l|}
+\hline
+\textbf{Difficulty Grade} & \textbf{Skill Modifier} \\
+\hline
+Automatic & No need to roll \\
+Very Easy & Double the skill value \\
+Easy & Add half again to the skill value \\
+Standard & No adjustment \\
+Hard & Reduce skill value by one-third \\
+Formidable & Reduce skill value by half \\
+Herculan & Reduce skill value to one-tenth \\
+Hopeless & No attempt can be made \\
+\hline
+\end{longtable}
+
+Or alternatively 
+
+\begin{longtable}{|l|l|}
+\hline
+\textbf{Difficulty Grade} & \textbf{Skill Modifier} \\
+\hline
+Very Easy & +40\% \\
+Easy & +20\% \\
+Standard & None \\
+Hard & -20\% \\
+Formidable & -40\% \\
+Herculan & -80\% \\
+\hline
+\end{longtable}
+
+For quick reference see \hyperref[sec:skill_table]{table of all skills}.
+
+\section{Special Skill Situations}
+
+\subsection{Reattempting Skills}
+\label{sec:reattempt}
+
+After a failed skill attempt, a last-ditch follow-up attempt may be permitted but:
+\begin{itemize}
+    \item Difficulty increases by one grade
+    \item If this second effort fails, no further attempts possible
+\end{itemize}
+
+\subsection{Augmenting Skills}
+\label{sec:augment}
+
+One skill can aid another if appropriate:
+\begin{itemize}
+    \item GM decides if augmentation is appropriate
+    \item Can only augment primary skill with one other skill
+    \item Augmenting skill adds twice its critical range (20\% of skill) to primary skill
+    \item Critical and Fumble chances remain based on unaugmented primary skill
+\end{itemize}
+
+\subsection{Capping Skills}
+\label{sec:cap}
+
+Primary skill is restricted to value of secondary skill when the latter is lower, typically when knowledge is limited by unusual circumstances.
+
+\section{Contested Rolls}
+If the highest-skilled participant has skill exceeding 100\%, subtract the difference between 100\% and their skill value from everyone in the contest, including themselves.
+
+
+\subsection{Opposed Rolls}
+\label{sec:opposed}
+
+Used where challenge results in win/lose, pass/fail:
+If the highest-skilled participant has skill exceeding 100\%, subtract the difference between 100\% and their skill value from everyone in the contest, including themselves.
+
+\begin{enumerate}
+    \item Both participants roll respective skills
+    \item Winner is the one with better level of success
+    \item If same level of success, winner is the one with highest roll within success range
+\end{enumerate}
+
+If both participants fail in an Opposed Roll then either:
+
+\begin{itemize}
+    \item Describe the situation, leaving both sides hanging in dramatic tension, then re-roll the contest to establish a winner.
+    \item The Games Master should produce some explanation or circumstances that suit the nature of the failure.
+\end{itemize}
+
+\section{Opposed Roll Examples}
+
+\begin{longtable}{|l|l|}
+\hline
+\textbf{Activity} & \textbf{Opposing Skills} \\
+\hline
+Bargaining/Haggling & Commerce vs Commerce/Willpower \\
+Chasing/Racing & Athletics vs Athletics, Ride vs Ride \\
+Deceiving or Lying & Deceit vs Insight \\
+Disguise & Disguise vs Perception \\
+Foraging & Locale vs Survival \\
+Gambling & Gambling vs Gambling \\
+Hiding & Conceal/Stealth vs Perception \\
+Influencing & Influence vs Willpower/Influence \\
+Lockpicking & Lockpicking vs Mechanisms \\
+Picking Pockets & Sleight vs Perception \\
+Seduction & Seduction vs Willpower \\
+Stealth & Stealth vs Perception \\
+Tracking & Track vs Conceal \\
+\hline
+\end{longtable}
+
+\subsection{Differential Rolls}
+\label{sec:differential}
+
+Used primarily for \textcolor{red}{combat}. Both participants roll against respective skills and suffer results of their roll as if tested in isolation.
+
+\begin{longtable}[c]{@{}lllll@{}}
+\caption{Differential Roll Results}
+\label{tab:differential-roll-results}\\
+\toprule
+Result of Rolls & Antagonist Critical & Antagonist Success & Antagonist Failure & Antagonist Fumble \\ \midrule
+\endfirsthead
+\multicolumn{5}{c}%
+{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+\toprule
+Result of Rolls & Antagonist Critical & Antagonist Success & Antagonist Failure & Antagonist Fumble \\ \midrule
+\endhead
+\bottomrule
+\endfoot
+Protagonist Critical & No Benefit & Protagonist Wins 1 level of Success & Protagonist Wins 2 levels of Success & Protagonist Wins 3 levels of Success \\
+Protagonist Success & Protagonist Wins 1 level of Success & No Benefit & Protagonist Wins 1 level of Success & Protagonist Wins 2 levels of Success \\
+Protagonist Failure & Protagonist Wins 2 levels of Success & Protagonist Wins 1 level of Success & No Benefit & No Benefit \\
+Protagonist Fumble & Protagonist Wins 3 levels of Success & Protagonist Wins 2 levels of Success & No Benefit & No Benefit \\ \bottomrule
+\end{longtable}
+
+\subsection{Group Rolls}
+\label{sec:group}
+
+\textbf{Team Roll}
+Success is cooperative. Roll once for highest or lowest skill; success means everyone succeeds, failure means everyone fails.
+
+\textbf{Sorting Roll}
+Success is individual. Make one roll for the group; those with skill above the roll succeed, those below fail.
+
+\textbf{Proportional Skill Success}
+For large groups performing same task with no margin for error, apply skill as percentage of group success.
+
+
+\section{Athletics (STR+DEX)}
+\label{skill:athletics}
+
+Covers climbing, jumping, running, and throwing. Armour affects these activities based on \hyperref[sec:armor-movement]{Armour Penalty}.
+
+\subsection{Climbing}
+\label{skill:climbing}
+
+
+\textbf{Critical}: Scale extremely quickly or avoid hidden danger\\
+\textbf{Failure}: Climb aborted\\
+\textbf{Fumble}: Fall (cannot use Acrobatics to reduce damage)
+
+\subsection{Jumping}
+\label{skill:jumping}
+
+\begin{itemize}
+    \item \textbf{With run-up (5m minimum)}: Up to twice height horizontally, or half height vertically
+    \item \textbf{Standing jump}: Halve above distances
+    \item \textbf{Armour}: Reduce jump distance in metres by half Armour Penalty (min 1m)
+    \item \textbf{Athletics bonus}: +1m horizontal or +20cm vertical per full 20\%
+\end{itemize}
+
+Jumping over half maximum distance results in falling prone on landing.
+
+\textbf{Critical}: +1m to distance, remain upright\\
+\textbf{Fumble}: Land awkwardly → Endurance roll: success = 1 damage to leg, failure = 1d4 damage
+
+\subsection{Running}
+\label{skill:running}
+
++1m to base Movement when sprinting per full 25\%, or half that for long distances
+
+\textbf{Critical}: +1m to Movement rate\\
+\textbf{Failure}: Increase fatigue level\\
+\textbf{Fumble}: Endurance roll: success = 1 damage to leg, failure = 1d4 damage
+
+\subsection{Throwing}
+\label{skill:throwing}
+
+For hurling large/unwieldy objects. Maximum range = 1m per point STR exceeds object's SIZ.
+
+Weapons thrown point-first \textcolor{red}{Combat Style}.
+
+\section{Boating (STR+CON)}
+\label{skill:boating}
+
+Operation of small craft on rivers, lakes, inshore. For large \hyperref[sec:vehicles]{vessels} vessels .
+
+\textbf{Critical}: +1/10 to vessel's Movement rate\\
+\textbf{Failure}: Movement halved or destination missed\\
+\textbf{Fumble}: Lose oar, take on water, or capsize in bad conditions
+
+\section{Brawn (STR+SIZ)}
+\label{skill:brawn}
+
+Applying row phisical force: lifting, breaking, and so on.
+
+\subsection{Lifting}
+\label{skill:lifting}
+
+Base capacity = STR in SIZ (1 SIZ ≈ 5kg). +1 SIZ per full 10\% skill.
+
+Maximum brief lift = 2 × STR + skill bonus.
+
+\textbf{Failure}: Endurance roll or 1d3 damage to random location (head excluded)\\
+\textbf{Fumble}: Automatic injury
+
+\subsection{Breaking}
+\label{skill:breaking}
+
+Use maximum lifting capacity with \textcolor{red}{Damage Modifier} table to determine damage per attempt.
+
+\subsection{Contests of Strength}
+\label{skill:strength-contest}
+
+Simple opposed roll. If \textcolor{red}{Damage Modifier} differs:
+\begin{itemize}
+    \item 1 step difference - Hard difficulty for smaller
+    \item 2 steps difference - Formidable difficulty
+\end{itemize}
+
+\section{Conceal (DEX+POW)}
+\label{skill:conceal}
+
+Hiding objects rather than self. Counterpart to \hyperref[skill:stealth]{Stealth}.
+
+\textbf{Critical}: Discovery rolls one grade harder\\
+\textbf{Failure}: Automatically found if searched\\
+\textbf{Fumble}: Object falls/rolls into open, drawing attention
+
+\section{Customs (INT×2)}
+\label{skill:customs}
+
+Knowledge of own community's social codes, rites, taboos.
+
+\textbf{Critical}: Exemplary action or subtle nuance detected\\
+\textbf{Failure}: Minor irritation or humor\\
+\textbf{Fumble}: Offence given (rebuke to violent punishment)
+
+\section{Dance (DEX+CHA)}
+\label{skill:dance}
+
+\textbf{Critical}: Expressive, fluid performance; as persuasive as \hyperref[skill:influence]{Influence}, or subsequent Influence gets bonus equal to critical score\\
+\textbf{Failure}: Lackluster performance\\
+\textbf{Fumble}: Trip or stumble; communication skills penalized
+
+\section{Deceit (INT+CHA)}
+\label{skill:deceit}
+
+Masking truth, lying, bluffing, hiding emotions. Opposes \hyperref[skill:insight]{Insight}.
+
+\textbf{Critical}: Convincing deceit; truth won't be questioned unless exposed\\
+\textbf{Failure}: Lacked conviction, prompting investigation\\
+\textbf{Fumble}: Transparent failure; future credibility damaged
+
+\section{Drive (DEX+POW)}
+\label{skill:drive}
+
+Control of wheeled/drawn vehicles.
+
+\textbf{Critical}: +1/10 Movement or skillful feat\\
+\textbf{Failure}: Halve Movement\\
+\textbf{Fumble}: Breakdown or \hyperref[sec:falling]{overturn} (occupants need \hyperref[skill:acrobatics]{Acrobatics} or \hyperref[skill:evade]{Evade} to avoid damage)
+
+\section{Endurance (CON×2)}
+\label{skill:endurance}
+
+Physical stress, pain, fatigue resistance. Optional limit: Cannot exceed CON×5.
+
+\textbf{Critical}: Shrug off worst effects; act when incapacitated\\
+\textbf{Failure}: Succumb to stress/injury\\
+\textbf{Fumble}: Overwhelmed; incapacitated; auto-fail further resistance
+
+\section{Evade (DEX×2)}
+\label{skill:evade}
+
+Escape danger, avoid missiles, traps, spells.
+
+\textbf{Opposed by}:
+\begin{itemize}
+    \item \textcolor{red}{Combat Style} (missiles)
+    \item Trap's Potency or designer's skill (traps)
+    \item Caster's casting skill (spells)
+    \item Attacker's Evade (combat maneuvers)
+\end{itemize}
+
+\textbf{Critical}: Retain advantage/composure\\
+\textbf{Fumble}: character has left himself wide open to the hazard, for instance: maximum damage from a trap or ending up prone.
+
+The effect of Criticals and Fumbles during combat is a \textcolor{red}{special case}.
+
+\section{First Aid (DEX+INT)}
+\label{skill:firstaid}
+
+Treat \textcolor{red}{injuries}. Takes 1d3 minutes. Requires bandages/equipment. Once per specific injury. If multiple body parts was damageed, can be applyed to each part.
+
+\begin{longtable}{|l|l|}
+\hline
+\textbf{Injury} & \textbf{Successful Treatment} \\
+\hline
+Asphyxiated & Victim breathes again \\
+Bleeding & Blood flow staunched \\
+Impaled & Item removed without further damage \\
+Unconsciousness & Restored to awareness \\
+Minor Wound & Restores 1d3 hit points \\
+Serious Wound & Restores partial functionality \\
+Major Wound & Stabilizes area, prevents death \\
+\hline
+\end{longtable}
+
+\textbf{Critical}: Minor = 1d6 HP, Serious = 1d3 HP, Major = partial functionality\\
+\textbf{Fumble}: +1 damage, potentially increasing severity
+
+\section{Influence (CHA×2)}
+\label{skill:influence}
+
+Persuasion, bribery. Opposed by \hyperref[skill:perception]{Perception}, \hyperref[skill:willpower]{Willpower}, or Influence.
+
+\textbf{Critical}: Next Influence test with same person one grade easier\\
+\textbf{Failure}: Refusal, no issues\\
+\textbf{Fumble}: Offence given; further attempts one grade harder
+
+\section{Insight (INT+POW)}
+\label{skill:insight}
+
+Reading verbal non-verbal behaviour, opposes \hyperref[skill:deceit]{Deceit}.
+
+\textbf{Critical}: In-depth understanding; subsequent Deceit/Influence one grade easier\\
+\textbf{Failure}: Nothing discerned\\
+\textbf{Fumble}: Completely misjudge; Deceit/Influence one grade harder
+
+\section{Locale (INT×2)}
+\label{skill:locale}
+
+Knowledge of local flora, fauna, terrain, weather.
+
+\textbf{Critical}: Find abundance or precise identification; subsequent related rolls one grade easier\\
+\textbf{Failure}: Insufficient evidence\\
+\textbf{Fumble}: Utter misunderstanding; dependent rolls one grade harder
+
+\section{Native Tongue (INT+CHA)}
+\label{skill:nativetongue}
+
+The ability to speak one's own language learned growing up in one's home culture. Measures articulation, eloquence, and depth of vocabulary. Unlike other skills, Native Tongue is not rolled against directly. It serves as a static representation of overall fluency, limiting the level of conversational interaction.
+
+\begin{enumerate}
+    \item \textbf{Dialect Understanding}: Helps understand dialects of neighboring peoples sharing common linguistic origin. The skill is treated at least one grade harder in such cases, potentially affecting fluency.
+    \item \textbf{Verbal Skill Cap}: Acts as a cap on verbal skills requiring good language grasp (see \hyperref[sec:cap]{Capping Skills}).
+\end{enumerate}
+
+
+\section{Perception (INT+POW)}
+\label{skill:perception}
+
+Observation and detection.
+
+\textbf{Critical}: Reveal undetected additional information\\
+\textbf{Failure}: Nothing discerned\\
+\textbf{Fumble}: Obvious things overlooked; subsequent checks harder
+
+\section{Ride (DEX+POW)}
+\label{skill:ride}
+
+Controlling trained riding creatures.
+
+\begin{itemize}
+    \item Unfamiliar species: One grade harder
+    \item Different medium: Two grades harder
+\end{itemize}
+
+\textbf{Critical}: Flamboyant feat or +1/10 mount's Movement\\
+\textbf{Failure}: Mount gains fatigue level\\
+\textbf{Fumble}: Accident (rider falls or mount injured)
+
+\section{Sing (POW+CHA)}
+\label{skill:sing}
+
+\textbf{Critical}: +50\% earnings or subsequent Influence one grade easier\\
+\textbf{Failure}: Bland performance\\
+\textbf{Fumble}: Off-key; halve earnings, Influence/Deceit one grade harder
+
+\section{Stealth (DEX+INT)}
+\label{skill:stealth}
+
+Hiding, moving silently.
+
+\textbf{Critical}: Location attempts one grade harder\\
+\textbf{Failure}: Blatantly obvious if sought\\
+\textbf{Fumble}: Presence signaled or accident
+
+\section{Swim (STR+CON)}
+\label{skill:swim}
+
+Maximum speed = base Movement + 1m per full 20\%.
+
+\textbf{Critical}: +1m to Movement\\
+\textbf{Failure}: Gain fatigue level\\
+\textbf{Fumble}: Cramps; future rolls one grade harder; keep head above water or drown (see \hyperref[sec:asphyxiation]{Asphyxiation})
+
+\section{Unarmed (STR+DEX)}
+\label{skill:unarmed}
+
+Universal Combat Style for brawling/wrestling. Critical/fumble effects per Combat chapter.
+
+\section{Willpower (POW×2)}
+\label{skill:willpower}
+
+Mental resilience, magic resistance.
+
+\textbf{Critical}: Hardened mind; no further mental influence this encounter\\
+\textbf{Failure}: Capitulation\\
+\textbf{Fumble}: Will broken; psychological effects permanent until healed
+
+
+\section{Acting (CHA×2)}
+\label{skill:acting}
+
+Impersonation, character portrayal. Complements \hyperref[skill:disguise]{Disguise} and \hyperref[skill:deceit]{Deceit}.
+
+\textbf{Critical}: Thoroughly convincing; subsequent skill rolls one grade easier\\
+\textbf{Failure}: Lackluster performance\\
+\textbf{Fumble}: Convinces no one; seen through
+
+\section{Acrobatics (STR+DEX)}
+\label{skill:acrobatics}
+
+Balance, gymnastics, tumbling. Can substitute for \hyperref[skill:evade]{Evade}; if successful, avoid ending prone.
+
+\textbf{Falling}: Reduce effective fall distance by 2m (see \hyperref[sec:falling]{Falling})
+
+\textbf{Critical}: Double movement rate when balancing\\
+\textbf{Failure}: Unimpressive or aborted attempt\\
+\textbf{Fumble}: Fall, drop object, or 1d4 damage to random location
+
+\section{Art (POW+CHA)}
+\label{skill:art}
+
+Specific artistic medium (Painting, Poetry, Literature, Sculpture). Each advanced separately.
+
+\textbf{Critical}: Worth +50\% value; subsequent Influence one grade easier\\
+\textbf{Failure}: Insipid; worth only materials\\
+\textbf{Fumble}: Artistic disaster; reputation damaged
+
+\section{Binding (POW+CHA)}
+\label{skill:binding}
+
+Animist skill for spirits (see \textcolor{red}{Animism}). Also binds elementals/demons.
+
+\section{Bureaucracy (INT×2)}
+\label{skill:bureaucracy}
+
+Administrative procedures, official interaction. Cannot exceed \hyperref[skill:nativetongue]{Language}/\hyperref[skill:literacy]{Literacy} skill.
+
+\textbf{Critical}: Half time; subsequent skills one grade easier\\
+\textbf{Failure}: Stonewalled; subsequent skills one grade harder\\
+\textbf{Fumble}: Access forbidden; request never satisfied
+
+\section{Commerce (INT+CHA)}
+\label{skill:commerce}
+
+Evaluating goods, trading, disposing of illicit goods. Opposed by Commerce or \hyperref[skill:willpower]{Willpower}.
+
+\textbf{Critical}: Buy at half price or sell for double\\
+\textbf{Failure}: Buy at double or sell for half\\
+\textbf{Fumble}: Insulted; transaction lost; cheated
+
+\section{Courtesy (INT+CHA)}
+\label{skill:courtesy}
+
+Social/formal situation protocols.
+
+\textbf{Critical}: Subsequent relevant skills one grade easier\\
+\textbf{Failure}: Not impressed; subsequent skills one grade harder\\
+\textbf{Fumble}: Severe embarrassment; no further social intercourse
+
+\section{Craft (DEX+INT)}
+\label{skill:craft}
+
+Specialized crafting form. For construction, see \hyperref[skill:engineering]{Engineering}.
+
+\textbf{Critical}: Superior quality\\
+\textbf{Failure}: Sub-standard result\\
+\textbf{Fumble}: Useless item or crafting accident
+
+\section{Culture (INT×2)}
+\label{skill:culture}
+
+Foreign society customs. Works like \hyperref[skill:customs]{Customs}.
+
+\section{Devotion (POW+CHA)}
+\label{skill:devotion}
+
+Priestly commitment to deity; theistic miracles (see \textcolor{red}{Theism}).
+
+\section{Disguise (INT+CHA)}
+\label{skill:disguise}
+
+Convincing disguise with appropriate materials. Complements \hyperref[skill:acting]{Acting}.
+
+\textbf{Critical}: Completely convincing\\
+\textbf{Failure}: Meager attempt; perceptive observers see through\\
+\textbf{Fumble}: Crass disguise or spectacular failure
+
+\section{Engineering (INT×2)}
+\label{skill:engineering}
+
+Large-scale structures, siege engines. For delicate mechanisms, see \hyperref[skill:mechanisms]{Mechanisms}.
+
+\textbf{Critical}: Reveal flaws; dependent rolls one grade easier; +10\% HP/AP\\
+\textbf{Failure}: Sub-standard (-10\% HP/AP)\\
+\textbf{Fumble}: Major flaw; dependent rolls one grade harder
+
+\section{Exhort (INT+CHA)}
+\label{skill:exhort}
+
+Theistic magic skill for divine miracles (see \textcolor{red}{Theism}).
+
+\section{Folk Magic (POW+CHA)}
+\label{skill:folkmagic}
+
+Casting charms, cantrips, blessings (see \textcolor{red}{Folk Magic}).
+
+\section{Gambling (INT+POW)}
+\label{skill:gambling}
+
+Games of chance, assessing odds, detecting cheating.
+
+\textbf{Critical}: Win outright or clean out participants\\
+\textbf{Failure}: Lose hand/stake\\
+\textbf{Fumble}: Lose everything; thrown out
+
+If you are cheating diring the game, roll twice, take best. Opposed \hyperref[skill:sleight]{Sleight} vs all observers' \hyperref[skill:perception]{Perception}/Gambling.
+
+\section{Healing (INT+POW)}
+\label{skill:healing}
+
+Medical procedures, herbs, natural cures.
+
+\subsection{Treating Serious Wounds}
+\textbf{Success}: Restores 1d3 HP to \textcolor{red}{Seriously Injured location}\\
+\textbf{Critical}: 1d3+1 HP\\
+\textbf{Fumble}: +1 damage
+
+\subsection{Treating \hyperref[sec:disease-poison]{Diseases and Poisons}}
+\textbf{Before onset}: Opposed roll vs \hyperref[sec:disease-poison]{Potency} to counteract\\
+\textbf{After onset}: New resistance roll one grade easier\\
+\textbf{Critical}: Victim automatically resists
+
+\subsection{Surgery}
+Major Wounds: Restores 1 HP per day of surgery, up to 1/week. Fumble = permanent maiming.
+
+\section{Invocation (INT×2)}
+\label{skill:invocation}
+
+Sorcery skill for casting spells (see textcolor{red}{Sorcery chapter}).
+
+\section{Language (INT+CHA)}
+\label{skill:language}
+
+Foreign language fluency. Proficiency levels:
+
+\begin{itemize}
+    \item 0-25\%: Basic words, simple sentences
+    \item 26-50\%: Halting conversation
+    \item 51-75\%: Fluent conversation
+    \item 76\%+: Full fluency, dialect understanding
+\end{itemize}
+Each Language skill is specific to a particular national or regional language which must be chosen at the time of learning. It can help to understand similar dialects which share a common linguistic basis or origin. Depending on the divergence, the skill roll should be treated at least one grade harder, possibly reducing the character’s fluency.
+
+
+\section{Literacy (INT×2)}
+\label{skill:literacy}
+
+Reading/writing. Cannot exceed Language skill.
+
+
+\section{Lockpicking (DEX×2)}
+\label{skill:lockpicking}
+
+Opening mechanical locks. Takes 1d3 combat rounds per attempt.
+The difficulty of the lock usually depends on the ability of the locksmith who created it, requiring an opposed test of Lockpicking versus Mechanisms skill of the crafter.
+A thief attempting to pick an expensive and expertly crafted mechanical doorlock of a kind he has never seen before, might have to make his Lockpick roll one or two grades harder, for example. And some locks – invisible, recessed bolts and deadlocks – might be impossible to pick.
+
+\textbf{Critical}: Pick in half time; device works perfectly\\
+\textbf{Failure}: Lock remains closed\\
+\textbf{Fumble}: Lock jammed or tools broken
+
+\section{Lore (INT×2)}
+\label{skill:lore}
+
+One skill for specialized knowledge area (History, Alchemy, Herbalism, etc.).
+
+\textbf{Critical}: Deep insight; dependent rolls one grade easier\\
+\textbf{Failure}: No useful information\\
+\textbf{Fumble}: Complete misunderstanding; dependent rolls one grade harder
+
+\section{Mechanisms (DEX+INT)}
+\label{skill:mechanisms}
+
+Assembling/disassembling mechanical devices, traps. For large structures, see \hyperref[skill:engineering]{Engineering}.
+
+Takes minimum 1d3×10 minutes; may extend to months.
+
+\textbf{Critical}: Half time; flawless; disabling attempts one grade harder\\
+\textbf{Failure}: Temperamental; disabling attempts one grade easier\\
+\textbf{Fumble}: Utterly broken; restart from scratch
+
+\section{Meditation (INT+CON)}
+\label{skill:meditation}
+
+Deep relaxation, concentration. Mystic skill (see \textcolor{red}{Mysticism chapter}).
+
+\textbf{Success}: Recover Fatigue or HP in normally forbidden situations.
+
+\section{Musicianship (DEX+CHA)}
+\label{skill:musicianship}
+
+Playing musical instruments. One instrument groups:
+
+\begin{itemize}
+    \item Bow Strings (violin, cello, fiddle)
+    \item Keyboards (piano, organ)
+    \item Percussion (drums)
+    \item Plucked Strings (harp, lyre)
+    \item Strummed Strings (lute, guitar)
+    \item Wind (pipe, flute, trumpet)
+\end{itemize}
+
+\textbf{Critical}: Stunning quality; subsequent Influence one grade easier\\
+\textbf{Failure}: Lackluster\\
+\textbf{Fumble}: Musical disaster; reputation damaged
+
+\section{Mysticism (POW+CON)}
+\label{skill:mysticism}
+
+Mystic skill for superhuman acts (see \textcolor{red}{Mysticism chapter}). Tied to specific mystical foundation.
+
+\section{Navigation (INT+POW)}
+\label{skill:navigation}
+
+Directing travel using landmarks, stars, etc. Each skill covers specific region/environment.
+
+\textbf{Critical}: Locate shortcut (fast current, hidden pass)\\
+\textbf{Failure}: Delays or temporarily lost\\
+\textbf{Fumble}: Utterly lost; cannot backtrack
+
+\section{Oratory (POW+CHA)}
+\label{skill:oratory}
+
+Mass persuasion, inspiring troops.
+
+\textbf{Critical}: Sway group completely; subsequent rolls one grade easier\\
+\textbf{Failure}: No effect\\
+\textbf{Fumble}: Alienated audience; believed opposite; subsequent rolls one grade harder
+
+\section{Seamanship (INT+CON)}
+\label{skill:seamanship}
+
+Large waterborne vessels. Works like \hyperref[skill:boating]{Boating}, maintenance and upkeep s ship.
+
+\section{Seduction (INT+CHA)}
+\label{skill:seduction}
+
+Romantic/sexual persuasion. Takes hours to weeks. Opposed by \hyperref[skill:willpower]{Willpower}.
+
+\textbf{Critical}: Entrance victim; subsequent rolls one grade easier\\
+\textbf{Failure}: Rebuffed\\
+\textbf{Fumble}: Emotional hurt; further chances ruined; subsequent rolls one grade harder
+
+\section{Shaping (INT+POW)}
+\label{skill:shaping}
+
+Sorcery skill for manipulating spells (see \textcolor{red}{sorcery}).
+
+\section{Sleight (DEX+CHA)}
+\label{skill:sleight}
+
+Palming objects, pickpocketing. Items must be $\leq$ hand size. Opposed by \hyperref[skill:perception]{Perception}.
+
+\textbf{Critical}: Location attempts one grade harder\\
+\textbf{Failure}: Not concealed; detected if sought\\
+\textbf{Fumble}: Dropped or exposed at inopportune moment
+
+\section{Streetwise (POW+CHA)}
+\label{skill:streetwise}
+
+Urban knowledge, social contacts, finding services.
+
+\textbf{Critical}: Precise location/contact; new contact formed\\
+\textbf{Failure}: Time wasted\\
+\textbf{Fumble}: Unwanted dangerous attention
+
+\section{Survival (CON+POW)}
+\label{skill:survival}
+
+Wilderness survival: foraging, shelter, fire. Roll once per day in adverse conditions.
+
+\textbf{Critical}: Good food/shelter; no further roll for days equal to critical range\\
+\textbf{Failure}: Automatic fatigue level until conditions change\\
+\textbf{Fumble}: Disastrous accident (creature, exposure, poison)
+
+\section{Teach (INT+CHA)}
+\label{skill:teach}
+
+Instructing others. Limits what can be taught to advanced students (see \hyperref[sec:teachers]{Training}).
+
+\section{Track (INT+CON)}
+\label{skill:track}
+
+Following quarry using signs. Opposed by \hyperref[skill:conceal]{Conceal}.
+
+\textbf{Critical}: Stay on trail regardless of conditions; no further rolls\\
+\textbf{Failure}: Lose trail; must backtrack\\
+\textbf{Fumble}: Trail lost utterly or wander into ambush
+
+\section{Trance (POW+CON)}
+\label{skill:trance}
+
+Animist skill for Spirit World perception/transition (see \textcolor{red}{Animism}).
+
+
+\section{Standard Skills and Skills Base Values}
+\label{sec:skill_table}
+
+\begin{longtable}{|l|l|l|l|}
+\hline
+\textbf{Skill} & \textbf{Base} & \textbf{Skill} & \textbf{Base} \\
+\hline
+Athletics & STR+DEX & Influence & CHA×2 \\
+Boating & STR+CON & Insight & INT+POW \\
+Brawn & STR+SIZ & Locale & INT×2 \\
+Conceal & DEX+POW & Native Tongue & INT+CHA \\
+Customs & INT×2 & Perception & INT+POW \\
+Dance & DEX+CHA & Ride & DEX+POW \\
+Deceit & INT+CHA & Sing & CHA+POW \\
+Drive & DEX+POW & Stealth & DEX+INT \\
+Endurance & CON×2 & Swim & STR+CON \\
+Evade & DEX×2 & Unarmed & STR+DEX \\
+First Aid & DEX+INT & Willpower & POW×2 \\
+\hline
+\end{longtable}
+
+\begin{longtable}{|l|l|l|l|}
+\hline
+\textbf{Skill} & \textbf{Base} & \textbf{Skill} & \textbf{Base} \\
+\hline
+Acting & CHA×2 & Meditation & INT+CON \\
+Acrobatics & STR+DEX & Musicianship & DEX+CHA \\
+Art & POW+CHA & Mysticism & POW+CON \\
+Binding & POW+CHA & Navigation & INT+POW \\
+Bureaucracy & INT×2 & Oratory & POW+CHA \\
+Commerce & INT+CHA & Seamanship & INT+CON \\
+Courtesy & INT+CHA & Seduction & INT+CHA \\
+Craft & DEX+INT & Shaping & INT+POW \\
+Culture & INT×2 & Sleight & DEX+CHA \\
+Devotion & POW+CHA & Streetwise & POW+CHA \\
+Disguise & INT+CHA & Survival & CON+POW \\
+Engineering & INT×2 & Teach & INT+CHA \\
+Exhort & INT+CHA & Track & INT+CON \\
+Folk Magic & POW+CHA & Trance & POW+CON \\
+Gambling & INT+POW & Healing & INT+POW \\
+Language & INT+CHA & Invocation & INT×2 \\
+Lockpicking & DEX×2 & Literacy & INT×2 \\
+Mechanisms & DEX+INT & Lore & INT×2 \\
+\hline
+\end{longtable}
+
+\begin{longtable}{|l|l|}
+\hline
+\textbf{Magic Type} & \textbf{Skills} \\
+\hline
+Animism & Binding, Trance \\
+Mysticism & Meditation, Mysticism \\
+Theism & Devotion, Exhort \\
+Sorcery & Invocation, Shaping \\
+\hline
+\end{longtable}
+
 \end{document}
